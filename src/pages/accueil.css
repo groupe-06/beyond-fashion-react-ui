@@ -1,0 +1,88 @@
+/* Animation flottante vers le haut et à gauche */
+@keyframes floating-up-left {
+  0% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(-50px, -50%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-100px, 0%);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(50px, 50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+}
+
+/* Animation flottante vers le haut et à droite */
+@keyframes floating-up-right {
+  0% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(50px, 50%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(100px, 0%);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(-50px, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
+
+/* Classes d'animation */
+.animate-floating-up-left {
+  animation: floating-up-left 5s ease-in-out infinite;
+}
+
+.animate-floating-up-right {
+  animation: floating-up-right 5s ease-in-out infinite;
+}
+
+/* Ajout de délai à l'animation pour que les logos sortent à des moments différents */
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-600 {
+  animation-delay: 0.6s;
+}
+.delay-800 {
+  animation-delay: 0.8s;
+}
+.delay-1000 {
+  animation-delay: 1s;
+}
+.delay-1200 {
+  animation-delay: 1.2s;
+}
+.delay-1400 {
+  animation-delay: 1.4s;
+}
+.delay-1600 {
+  animation-delay: 1.6s;
+}
+.delay-1800 {
+  animation-delay: 1.8s;
+}
